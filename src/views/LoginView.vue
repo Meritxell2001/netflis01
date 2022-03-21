@@ -1,7 +1,7 @@
 <template>
     <h1>Login</h1>
-    <input placeholder="Email" />
-    <input placeholder="Password" />
+    <input placeholder="Email">
+    <input placeholder="Password">
     <button value="Login">Login</button>
 </template>
 

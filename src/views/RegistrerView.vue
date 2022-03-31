@@ -2,10 +2,12 @@
 <link href="./css/style.css" rel="stylesheet" type="text/css">
 <body>
     <div class="container">
-        <h1>Login</h1>
+        <h1>Registrer</h1>
+        <input v-model="name" placeholder="name">
+        <input v-model="lastName" placeholder="lastName">
         <input v-model="email" placeholder="Email">
         <input v-model="password" placeholder="Password">
-        <button @click="login" class="boton" value="Login">Login</button>
+        <button @click="registrer" class="boton" value="Registrer">Registrer</button>
     </div>
 </body>
 </template>
@@ -21,11 +23,11 @@ export default {
     },
     data() {
         return {
-            email: 'hola@hola.com', password: 'hola123'
+            email: 'hola@hola.com', password: 'hola'
         }
     },
     methods: {
-        login() {
+        registrer() {
             this.$auth.login(this.email, this.password);
         }
     }
